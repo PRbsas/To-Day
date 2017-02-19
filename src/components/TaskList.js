@@ -12,7 +12,7 @@ const TaskList = ({ taskItems, removeItem }) => {
     )
   });
   return (
-    <div className="task-list">{taskNode}</div>
+    <ul className="task-list">{taskNode}</ul>
   );
 }
 export default TaskList;

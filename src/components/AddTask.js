@@ -4,15 +4,15 @@ const AddTask = ({ addTask }) => {
   let input;
   return (
     <div className="input-group">
-      <input ref={node => {
-        input: node
+      <input className="form-control" type="text" ref={node => {
+        input = node;
       }} />
-      <button onClick={(event) => {
+      <button className="add-button" onClick={(event) => {
         event.preventDefault();
         addTask(input.value);
         input.value = '';
       }}>
-      Add Task
+      +
       </button>
     </div>
   );

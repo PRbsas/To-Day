@@ -1,39 +1,45 @@
 .App {
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  max-width: 26.25rem;
+  background: #fff;
+  border-radius: 4px;
   text-align: center;
 }
 
-.app-container {
- margin-top: 2rem;
- margin-right: auto;
- margin-left: auto;
- overflow: hidden;
- max-width: 26.25rem;
- background: #fff;
- border-radius: 4px;
- box-shadow: 0 1px 3px rgba(0, 0, 0, 0.025), 0 3px 6px rgba(0, 0, 0, 0.065);
+
+.input-group .form-control {
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  width: 50%;
 }
 
-.input-group {
- padding-top: .6rem;
- padding-bottom: .6rem;
- width: 70%;
- border-bottom: 0;
- border-left: 0;
- border-color: #eee;
+.form-control {
+  font-size: 24px;
+  padding: 20px;
+  border: none;
+  border-bottom: solid 2px #ddd;
+
+}
+.form-control:focus {
+  transition: border 0.3s;
+  border-bottom: solid 2px #222;
+  outline: 0;
 }
 
-.input-group-addon {
- padding-top: 10.5px;
- padding-bottom: 10.5px;
- min-width: 5rem;
- width: 30%;
- color: #fff;
- background-color: #039be5;
- border: 0;
- border-radius: 0;
+.add-button {
+  padding: 0 10px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #222;
+  border: 0;
+  border-radius: 50%;
 }
 
-.input-group-addon:focus {
+.add-button:focus {
  outline: 0;
 }
 
@@ -43,6 +49,7 @@
  margin-left: 0;
  overflow: hidden;
  list-style-type: none;
+ text-align: left;
 }
 
 .task-item {
@@ -54,21 +61,31 @@
  background: #fff;
  cursor: default;
  border-top: 1px solid #eee;
+ overflow: hidden;
 }
 
 .task-item:last-of-type {
  border-bottom: 1px solid #eee;
 }
 
-.task-remover {
+.remover {
  line-height: 1.45;
- color: #ddd;
+ color: #222;
  cursor: pointer;
  -webkit-transition: color .25s ease-in-out;
  transition: color .25s ease-in-out;
+ width: 20px;
+ height: 20px;
+ color: #fff;
+ background-color: #ddd;
+ border: 0;
+ border-radius: 50%;
+ float: right;
+ margin-right: 10%;
+ outline: 0;
 }
 
-.task-remover:focus,
-.task-remover:hover {
- color: #e53935;
+.remover:focus,
+.remover:hover {
+ background-color: #222;
 }

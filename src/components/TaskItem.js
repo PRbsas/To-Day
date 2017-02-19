@@ -2,10 +2,18 @@ import React from 'react';
 
 const TaskItem = ({ taskItem, removeItem }) => {
   return (
-      <a href='#' className="task-item" onClick={() =>
-        { removeItem(taskItem.id) }}>
+      <li className="task-item">
         { taskItem.text }
-      </a>
+        <button
+        className="remover"
+        onClick={() =>
+          { removeItem(taskItem.id) }}>
+            x
+          </button>
+      </li>
+
+
+
   );
 }
 export default TaskItem;
